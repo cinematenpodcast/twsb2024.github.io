@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Firebase SDK's -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBArtZfsUtOII_pXSC9Sy9OY9NqcuJZ62w",
+            authDomain: "marketing-projecten-database.firebaseapp.com",
+            databaseURL: "https://marketing-projecten-database-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "marketing-projecten-database",
+            storageBucket: "marketing-projecten-database.appspot.com",
+            messagingSenderId: "971146430762",
+            appId: "1:971146430762:web:5744a98df83fbd4b563653"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De tussenstand</title>
+    <link rel="stylesheet" href="/live_styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1></h1>
+        
+        <!-- Winner's podium for top 3 teams -->
+        <div class="podium">
+            <div class="second-place">
+                <div class="content-wrapper">
+                    <div class="team-info">
+                        <span class="team-name" id="second-place-name">Team B</span>
+                        <span class="team-score" id="second-place-score">00</span>
+                    </div>
+                    <span class="place-number">2</span>
+                </div>
+            </div>
+            <div class="first-place">
+                <div class="content-wrapper">
+                    <div class="team-info">
+                        <span class="team-name" id="first-place-name">Team A</span>
+                        <span class="team-score" id="first-place-score">0</span>
+                    </div>
+                    <span class="place-number">1</span>
+                </div>
+            </div>
+            <div class="third-place">
+                <div class="content-wrapper">
+                    <div class="team-info">
+                        <span class="team-name" id="third-place-name">Team C</span>
+                        <span class="team-score" id="third-place-score">0</span>
+                    </div>
+                    <span class="place-number">3</span>
+                </div>
+            </div>
+        </div>        
+
+        <!-- Remaining teams in columns -->
+        <div class="team-columns">
+            <div class="column" id="column-1"></div>
+            <div class="column" id="column-2"></div>
+            <div class="column" id="column-3"></div>
+        </div>
+    </div>
+
+    <script src="/live_script.js"></script>
+</body>
+</html>

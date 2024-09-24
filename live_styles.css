@@ -1,0 +1,124 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #002548;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    min-height: 95vh;
+    max-width: 95vw;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #009AC7;
+    margin-bottom: 20px;
+    font-size: 75px;
+}
+
+.podium {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end; /* Aligns items to the bottom to simulate the podium effect */
+    margin-bottom: 150px;
+}
+
+.first-place {
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    width: 400px;
+    height: 250px; /* Matches the height of the place-number */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.second-place, .third-place {
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    width: 400px;
+    height: 200px; /* Shorter than first-place */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.second-place {
+    transform: translateY(100px); /* Lower second place */
+}
+
+.third-place {
+    transform: translateY(100px); /* Lower third place */
+}
+
+.content-wrapper {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertical centering */
+    align-items: center;
+}
+
+.place-number {
+    font-size: 250px;
+    color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%; /* Ensures it spans the entire parent height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-info {
+    position: relative;
+    z-index: 1; /* Ensures it stays above the place-number */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-score {
+    font-size: 30pt;
+    font-weight: 600;
+    color: #009AC7;
+}
+
+
+.team-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.column {
+    width: 30%;
+    text-align: left;
+}
+
+.column div {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #A7DEF1;
+    border-radius: 4px;
+    font-size: 30px;
+    font-style: bold;
+}
